@@ -1,10 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First GitHub Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fullscreen Marquee</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      overflow: hidden;
+      background: black;
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee-text {
+      white-space: nowrap;
+      font-size: 8vw;
+      font-weight: bold;
+      color: white;
+      animation: marquee 10s linear infinite;
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Hello, World! 🚀</h1>
-    <p>This is my first website hosted on GitHub Pages.</p>
+  <div class="marquee-text">
+    WILL YOU REGISTER FOR NOVASPHERE 2026?
+  </div>
 </body>
 </html>
